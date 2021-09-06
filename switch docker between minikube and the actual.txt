@@ -1,0 +1,5 @@
+switch to minikube docker
+eval $(minikube docker-env)
+
+switch to actual local docker
+eval $(minikube docker-env -u)

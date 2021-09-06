@@ -1,0 +1,13 @@
+minikube start --kubernetes-version=1.15.4
+
+helm init
+helm version
+
+install istio
+https://istio.io/docs/setup/getting-started/
+
+enable registry in minikube
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+https://stackoverflow.com/questions/42564058/how-to-use-local-docker-images-with-minikube
+
+This didn't work. I dont' know why -> https://minikube.sigs.k8s.io/docs/handbook/registry/

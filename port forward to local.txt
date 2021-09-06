@@ -1,0 +1,15 @@
+kubectl get svc -> get port of http-service
+
+kubectl port-forward service/http-service 7000:80
+
+kubectl port-forward service/my-service 7090:80
+
+kubectl port-forward service/test-postgresql 5434:5432 -n db-services
+
+kubectl port-forward service/test-oracle-db 1525:1521 -n db-services
+
+kubectl port-forward service/test-mongodb 27020:27017 -n db-services
+
+kubectl port-forward service/test-artemis 8165:8161 -n my-namespace
+
+
